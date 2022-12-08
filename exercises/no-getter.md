@@ -27,3 +27,29 @@ The program should take as input the path to the source code of the project. It 
 Include in this repository the code of your application. Remove all unnecessary files like compiled binaries. See the [instructions](../sujet.md) for suggestions on the projects to use.
 
 *Disclaimer* In a real project not all fields need to be accessed with a public getter.
+
+## Answer
+
+You will find the public elementPrinter class modified to get also the private attributs, the app and the main, at :
+
+> javaparser-starter/src/main/java/fr/istic/vv
+
+
+this contains the code for the question.
+ ## How it works :
+
+First we look for all public methode and all private attribut
+
+With them in a table, we filter the methode starting with "get", and put the end of the string on another table.
+
+The result is : 
+
+- Table 1 : table with attributs name
+- Table 2 : table with the names of the attributs accecible by a public methode starting with "get"
+
+Then, we only have to verifying which of the attributs are not in the Table 2
+
+If the attribut is not in the Table 2, we print a error like 
+> " < attribut_Name > doesn't have public getter "
+ 
+in a logFile.

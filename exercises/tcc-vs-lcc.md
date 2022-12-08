@@ -4,3 +4,25 @@ Explain under which circumstances *Tight Class Cohesion* (TCC) and *Loose Class 
 
 ## Answer
 
+Class Exemple:
+```java
+class A{
+
+    private String s;
+    
+    public void resetS(){
+        s = "";
+    }
+
+}
+```
+Ici le TCC et le LCC sont égaux. réspectivement 1 et 1 .
+
+Il est impossible d'avoir un LCC inferieur au TCC d'apres leurs formules :
+
+TCC = ConnectionsDirectes/connectionsTotales
+
+LCC = ConnectionsDirectes+ConnectionsIndirectes/ConnectionsTotales
+
+Source : https://www.aivosto.com/project/help/pm-oo-cohesion.html
+

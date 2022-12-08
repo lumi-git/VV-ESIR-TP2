@@ -1,0 +1,2 @@
+No public getter for private attribut : age
+No public getter for private attribut : zinzin
